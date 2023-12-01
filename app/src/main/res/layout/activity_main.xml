@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/AppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GenVCF"
+        android:textSize="20sp"
+        android:textColor="#2196F3"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="32dp"/>
+
+    <LinearLayout
+        android:id="@+id/Layer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/AppTitle"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/Text1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="0dp"
+            android:layout_weight="0.03"
+            android:text="+"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/TextBox1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Country"
+            android:inputType="number"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/TextBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Layer1"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Area code"
+        android:inputType="number"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/TextBox3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextBox2"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Random number of digits (7 default)"
+        android:inputType="number"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/TextBox4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextBox3"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Number of contacts to generate"
+        android:inputType="number"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextBox4"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:text="Generate VCF"
+        android:onClick="onGenerateButtonClick"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"/>
+
+</RelativeLayout>
