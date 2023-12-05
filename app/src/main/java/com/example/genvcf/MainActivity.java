@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity
         Intent intent1 = new Intent(Intent.ACTION_CREATE_DOCUMENT);
         intent1.addCategory(Intent.CATEGORY_OPENABLE);
         intent1.setType("text/vcard");
-        intent1.putExtra(Intent.EXTRA_TITLE, "Generated VCF");
+        intent1.putExtra(Intent.EXTRA_TITLE, "Generated VCF.vcf");
 
         startActivityForResult(intent1, CREATE_FILE_REQUEST_CODE);
     }
